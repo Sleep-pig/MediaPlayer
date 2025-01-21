@@ -1,0 +1,5 @@
+media_autogen/timestamp: \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/CMakeLists.txt \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp \
+	/usr/bin/cmake

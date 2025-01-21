@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/mocs_compilation.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/mocs_compilation.cpp",
+  "output": "src/UI/CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/core/main.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp",
+  "output": "src/UI/CMakeFiles/MediaPlayer.dir/core/main.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/media_autogen/mocs_compilation.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/mocs_compilation.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/mocs_compilation.cpp",
+  "output": "src/Media/CMakeFiles/media.dir/media_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/core/AudioDecoder.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/Media/core/AudioDecoder.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/Media/core/AudioDecoder.cpp",
+  "output": "src/Media/CMakeFiles/media.dir/core/AudioDecoder.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/core/decode.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp",
+  "output": "src/Media/CMakeFiles/media.dir/core/decode.cpp.o"
+}
+]

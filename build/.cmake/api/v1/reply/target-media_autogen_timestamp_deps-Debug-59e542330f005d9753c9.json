@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/Media/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "media_autogen_timestamp_deps::@e31e7b15e66d74234855",
+	"isGeneratorProvided" : true,
+	"name" : "media_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src/Media",
+		"source" : "src/Media"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

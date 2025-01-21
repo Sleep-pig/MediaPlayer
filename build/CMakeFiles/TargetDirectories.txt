@@ -1,0 +1,12 @@
+/home/jie/workspace/cpp/MediaPlayer/build/CMakeFiles/edit_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/CMakeFiles/rebuild_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/MediaPlayer.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/edit_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/rebuild_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/MediaPlayer_autogen.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/Media/CMakeFiles/media.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/Media/CMakeFiles/edit_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/Media/CMakeFiles/rebuild_cache.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/Media/CMakeFiles/media_autogen_timestamp_deps.dir
+/home/jie/workspace/cpp/MediaPlayer/build/src/Media/CMakeFiles/media_autogen.dir

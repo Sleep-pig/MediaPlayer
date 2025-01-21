@@ -1,0 +1,34 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/UI/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "media::@e31e7b15e66d74234855"
+		}
+	],
+	"id" : "MediaPlayer_autogen_timestamp_deps::@e6812f907734570e2a17",
+	"isGeneratorProvided" : true,
+	"name" : "MediaPlayer_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src/UI",
+		"source" : "src/UI"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

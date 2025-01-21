@@ -1,0 +1,15 @@
+# ninja log v6
+55	78	1737449158624376892	src/Media/libmedia.a	6c5ac737eb2b7683
+78	100	1737449158647710159	src/UI/MediaPlayer_autogen/timestamp	cf98840ba2fc8fe6
+78	100	1737449158647710159	/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/mocs_compilation.cpp	cf98840ba2fc8fe6
+119	135	1737448758755636509	src/UI/CMakeFiles/MediaPlayer.dir/core/main.cpp.o	521cfc6beb44e20b
+100	427	1737449158671043426	src/UI/MediaPlayer	170ff5b303baa735
+2	39	1737449158571043709	src/Media/media_autogen/mocs_compilation.cpp	c7c10f8bf2c06163
+119	135	1737448758755636509	src/UI/CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.o	fab674da975934d1
+2	39	1737449158571043709	/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/timestamp	c7c10f8bf2c06163
+78	100	1737449158647710159	/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/timestamp	cf98840ba2fc8fe6
+78	100	1737449158647710159	src/UI/MediaPlayer_autogen/mocs_compilation.cpp	cf98840ba2fc8fe6
+2	39	1737449158571043709	/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/mocs_compilation.cpp	c7c10f8bf2c06163
+2	39	1737449158571043709	src/Media/media_autogen/timestamp	c7c10f8bf2c06163
+39	55	1737449158607710272	src/Media/CMakeFiles/media.dir/media_autogen/mocs_compilation.cpp.o	a8cbe8714fad825
+39	55	1737449158607710272	src/Media/CMakeFiles/media.dir/core/decode.cpp.o	77d5cdfdad44173d
