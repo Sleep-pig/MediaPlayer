@@ -196,6 +196,14 @@ build src/Media/CMakeFiles/media.dir/core/AudioDecoder.cpp.o: CXX_COMPILER__medi
   OBJECT_DIR = src/Media/CMakeFiles/media.dir
   OBJECT_FILE_DIR = src/Media/CMakeFiles/media.dir/core
 
+build src/Media/CMakeFiles/media.dir/core/VideoDecoder.cpp.o: CXX_COMPILER__media_unscanned_Debug /home/jie/workspace/cpp/MediaPlayer/src/Media/core/VideoDecoder.cpp || cmake_object_order_depends_target_media
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = src/Media/CMakeFiles/media.dir/core/VideoDecoder.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fPIC
+  INCLUDES = -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork
+  OBJECT_DIR = src/Media/CMakeFiles/media.dir
+  OBJECT_FILE_DIR = src/Media/CMakeFiles/media.dir/core
+
 build src/Media/CMakeFiles/media.dir/core/decode.cpp.o: CXX_COMPILER__media_unscanned_Debug /home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp || cmake_object_order_depends_target_media
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB
   DEP_FILE = src/Media/CMakeFiles/media.dir/core/decode.cpp.o.d
@@ -212,7 +220,7 @@ build src/Media/CMakeFiles/media.dir/core/decode.cpp.o: CXX_COMPILER__media_unsc
 #############################################
 # Link the static library src/Media/libmedia.a
 
-build src/Media/libmedia.a: CXX_STATIC_LIBRARY_LINKER__media_Debug src/Media/CMakeFiles/media.dir/media_autogen/mocs_compilation.cpp.o src/Media/CMakeFiles/media.dir/core/AudioDecoder.cpp.o src/Media/CMakeFiles/media.dir/core/decode.cpp.o || src/Media/media_autogen src/Media/media_autogen_timestamp_deps
+build src/Media/libmedia.a: CXX_STATIC_LIBRARY_LINKER__media_Debug src/Media/CMakeFiles/media.dir/media_autogen/mocs_compilation.cpp.o src/Media/CMakeFiles/media.dir/core/AudioDecoder.cpp.o src/Media/CMakeFiles/media.dir/core/VideoDecoder.cpp.o src/Media/CMakeFiles/media.dir/core/decode.cpp.o || src/Media/media_autogen src/Media/media_autogen_timestamp_deps
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/Media/CMakeFiles/media.dir
   POST_BUILD = :

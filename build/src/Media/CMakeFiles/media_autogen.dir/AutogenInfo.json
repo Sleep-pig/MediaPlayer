@@ -18,6 +18,12 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/VideoDecoder.hpp",
+			"MU",
+			"6YEA5652QU/moc_VideoDecoder.cpp",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp",
 			"MU",
 			"6YEA5652QU/moc_decode.cpp",
@@ -93,6 +99,11 @@
 	[
 		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/Media/core/AudioDecoder.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/core/VideoDecoder.cpp",
 			"MU",
 			null
 		],

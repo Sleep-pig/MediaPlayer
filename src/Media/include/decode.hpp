@@ -10,7 +10,8 @@
 #include <qqueue.h>
 #include <QQueue>
 #include <QThread>
-
+#include "AudioDecoder.hpp"
+#include "VideoDecoder.hpp"
 extern "C" {
 #include "libavcodec/packet.h"
 #include "libavutil/hwcontext.h"
@@ -21,8 +22,6 @@ extern "C" {
 #include <libswscale/swscale.h>
 }
 
-class AudioDecoder;
-class VideoDecoder;
 
 #ifndef QMETATYPEID_DECODER
 # define QMETATYPEID_DECODER
@@ -36,8 +35,8 @@ signals:
     void startPlay();
     void playOver();
 
-    void initAudioOutput();
-    void initVideoOutput();
+    void initAudioOutput(int sampleRate, int channels);
+    void initVideoOutput(int format);
 
     void sendAudioPacket(AVPacket *pkt);
     void sendVideoPacket(AVPacket *pkt);
