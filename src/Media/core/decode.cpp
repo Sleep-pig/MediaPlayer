@@ -1,11 +1,13 @@
 #include "decode.hpp"
 #include "AudioDecoder.hpp"
+extern "C" {
 #include "libavcodec/codec_id.h"
 #include "libavformat/avformat.h"
 #include "libavutil/avutil.h"
 #include "libavutil/buffer.h"
 #include "libavutil/hwcontext.h"
 #include "libavutil/pixfmt.h"
+}
 #include "playerCommand.hpp"
 #include <cstdint>
 #include <qchar.h>
@@ -528,13 +530,13 @@ QString av_get_pixelformat_name(AVPixelFormat format) {
     case AV_PIX_FMT_D3D11:        name = "AV_PIX_FMT_D3D11"; break;
     case AV_PIX_FMT_OPENCL:       name = "AV_PIX_FMT_OPENCL"; break;
     case AV_PIX_FMT_VULKAN:       name = "AV_PIX_FMT_VULKAN"; break;
-    //case AV_PIX_FMT_D3D12:        name = "AV_PIX_FMT_D3D12"; break;
-    case AV_PIX_FMT_DXVA2_VLD:    name = "AV_PIX_FMT_DXVA2_VLD"; break;
-    case AV_PIX_FMT_VDPAU:        name = "AV_PIX_FMT_VDPAU"; break;
-    case AV_PIX_FMT_QSV:          name = "AV_PIX_FMT_QSV"; break;
-    case AV_PIX_FMT_MMAL:         name = "AV_PIX_FMT_MMAL"; break;
-    case AV_PIX_FMT_D3D11VA_VLD:  name = "AV_PIX_FMT_D3D11VA_VLD"; break;
-    case AV_PIX_FMT_CUDA:         name = "AV_PIX_FMT_CUDA"; break;
+    // case AV_PIX_FMT_D3D12:        name = "AV_PIX_FMT_D3D12"; break;
+    case AV_PIX_FMT_DXVA2_VLD:   name = "AV_PIX_FMT_DXVA2_VLD"; break;
+    case AV_PIX_FMT_VDPAU:       name = "AV_PIX_FMT_VDPAU"; break;
+    case AV_PIX_FMT_QSV:         name = "AV_PIX_FMT_QSV"; break;
+    case AV_PIX_FMT_MMAL:        name = "AV_PIX_FMT_MMAL"; break;
+    case AV_PIX_FMT_D3D11VA_VLD: name = "AV_PIX_FMT_D3D11VA_VLD"; break;
+    case AV_PIX_FMT_CUDA:        name = "AV_PIX_FMT_CUDA"; break;
 
     default: name = "value:" + QString::number(format); break;
     }

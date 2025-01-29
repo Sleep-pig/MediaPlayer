@@ -1,13 +1,16 @@
 #include "VideoDecoder.hpp"
+extern "C" {
 #include "libavcodec/avcodec.h"
 #include "libavcodec/packet.h"
 #include "libavutil/error.h"
 #include "libavutil/frame.h"
 #include "libavutil/hwcontext.h"
 #include "libavutil/pixfmt.h"
+}
 #include <cstdint>
 #include <QDebug>
 #include <QImage>
+
 void VideoDecoder::clean() {
     hw_device_pix_fmt = AV_PIX_FMT_NONE;
 
@@ -49,7 +52,7 @@ void VideoDecoder::decodeVideoPacket(AVPacket *packet) {
             emit sendVideoFrame(pixelData, frame->width, frame->height,
                                 framePts);
             av_frame_free(&frame);
-        }else if(ret != AVERROR(EAGAIN)){
+        } else if (ret != AVERROR(EAGAIN)) {
             qDebug() << "decodeVideoPacket error:" << ret;
         }
     } else {
@@ -81,8 +84,11 @@ void VideoDecoder::transferDataFromHW(AVFrame **frame) {
     }
 }
 
-uint8_t *VideoDecoder::copyNv12Data(uint8_t **pixelData, int *linesize, //属于YUV420空间 因此 Y：UV  2：1 一个像素点 包含 一个Y和1/2U或1/2V
-                                    int pixelWidth, int pixelHeight) {
+uint8_t *
+VideoDecoder::copyNv12Data(uint8_t **pixelData,
+                           int *linesize, // 属于YUV420空间 因此 Y：UV  2：1
+                                          // 一个像素点 包含 一个Y和1/2U或1/2V
+                           int pixelWidth, int pixelHeight) {
     uint8_t *pixel = new uint8_t[pixelWidth * pixelHeight * 3 / 2];
     uint8_t *y = pixel;
     uint8_t *uv = pixel + pixelWidth * pixelHeight;

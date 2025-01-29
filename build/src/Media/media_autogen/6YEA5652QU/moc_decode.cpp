@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Decode_t {
-    QByteArrayData data[14];
-    char stringdata0[148];
+    QByteArrayData data[17];
+    char stringdata0[175];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,21 +37,25 @@ QT_MOC_LITERAL(1, 7, 9), // "startPlay"
 QT_MOC_LITERAL(2, 17, 0), // ""
 QT_MOC_LITERAL(3, 18, 8), // "playOver"
 QT_MOC_LITERAL(4, 27, 15), // "initAudioOutput"
-QT_MOC_LITERAL(5, 43, 15), // "initVideoOutput"
-QT_MOC_LITERAL(6, 59, 15), // "sendAudioPacket"
-QT_MOC_LITERAL(7, 75, 9), // "AVPacket*"
-QT_MOC_LITERAL(8, 85, 3), // "pkt"
-QT_MOC_LITERAL(9, 89, 15), // "sendVideoPacket"
-QT_MOC_LITERAL(10, 105, 11), // "setCurFrame"
-QT_MOC_LITERAL(11, 117, 7), // "int64_t"
-QT_MOC_LITERAL(12, 125, 9), // "_curFrame"
-QT_MOC_LITERAL(13, 135, 12) // "decodePacket"
+QT_MOC_LITERAL(5, 43, 10), // "sampleRate"
+QT_MOC_LITERAL(6, 54, 8), // "channels"
+QT_MOC_LITERAL(7, 63, 15), // "initVideoOutput"
+QT_MOC_LITERAL(8, 79, 6), // "format"
+QT_MOC_LITERAL(9, 86, 15), // "sendAudioPacket"
+QT_MOC_LITERAL(10, 102, 9), // "AVPacket*"
+QT_MOC_LITERAL(11, 112, 3), // "pkt"
+QT_MOC_LITERAL(12, 116, 15), // "sendVideoPacket"
+QT_MOC_LITERAL(13, 132, 11), // "setCurFrame"
+QT_MOC_LITERAL(14, 144, 7), // "int64_t"
+QT_MOC_LITERAL(15, 152, 9), // "_curFrame"
+QT_MOC_LITERAL(16, 162, 12) // "decodePacket"
 
     },
     "Decode\0startPlay\0\0playOver\0initAudioOutput\0"
-    "initVideoOutput\0sendAudioPacket\0"
-    "AVPacket*\0pkt\0sendVideoPacket\0setCurFrame\0"
-    "int64_t\0_curFrame\0decodePacket"
+    "sampleRate\0channels\0initVideoOutput\0"
+    "format\0sendAudioPacket\0AVPacket*\0pkt\0"
+    "sendVideoPacket\0setCurFrame\0int64_t\0"
+    "_curFrame\0decodePacket"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,25 +75,25 @@ static const uint qt_meta_data_Decode[] = {
  // signals: name, argc, parameters, tag, flags
        1,    0,   54,    2, 0x06 /* Public */,
        3,    0,   55,    2, 0x06 /* Public */,
-       4,    0,   56,    2, 0x06 /* Public */,
-       5,    0,   57,    2, 0x06 /* Public */,
-       6,    1,   58,    2, 0x06 /* Public */,
-       9,    1,   61,    2, 0x06 /* Public */,
+       4,    2,   56,    2, 0x06 /* Public */,
+       7,    1,   61,    2, 0x06 /* Public */,
+       9,    1,   64,    2, 0x06 /* Public */,
+      12,    1,   67,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-      10,    1,   64,    2, 0x0a /* Public */,
-      13,    0,   67,    2, 0x0a /* Public */,
+      13,    1,   70,    2, 0x0a /* Public */,
+      16,    0,   73,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 7,    8,
-    QMetaType::Void, 0x80000000 | 7,    8,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    5,    6,
+    QMetaType::Void, QMetaType::Int,    8,
+    QMetaType::Void, 0x80000000 | 10,   11,
+    QMetaType::Void, 0x80000000 | 10,   11,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 14,   15,
     QMetaType::Void,
 
        0        // eod
@@ -103,8 +107,8 @@ void Decode::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         switch (_id) {
         case 0: _t->startPlay(); break;
         case 1: _t->playOver(); break;
-        case 2: _t->initAudioOutput(); break;
-        case 3: _t->initVideoOutput(); break;
+        case 2: _t->initAudioOutput((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 3: _t->initVideoOutput((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 4: _t->sendAudioPacket((*reinterpret_cast< AVPacket*(*)>(_a[1]))); break;
         case 5: _t->sendVideoPacket((*reinterpret_cast< AVPacket*(*)>(_a[1]))); break;
         case 6: _t->setCurFrame((*reinterpret_cast< int64_t(*)>(_a[1]))); break;
@@ -128,14 +132,14 @@ void Decode::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
             }
         }
         {
-            using _t = void (Decode::*)();
+            using _t = void (Decode::*)(int , int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Decode::initAudioOutput)) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (Decode::*)();
+            using _t = void (Decode::*)(int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Decode::initVideoOutput)) {
                 *result = 3;
                 return;
@@ -211,15 +215,17 @@ void Decode::playOver()
 }
 
 // SIGNAL 2
-void Decode::initAudioOutput()
+void Decode::initAudioOutput(int _t1, int _t2)
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
-void Decode::initVideoOutput()
+void Decode::initVideoOutput(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 
 // SIGNAL 4

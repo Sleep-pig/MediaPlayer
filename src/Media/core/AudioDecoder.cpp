@@ -1,10 +1,12 @@
 #include "AudioDecoder.hpp"
+extern "C" {
 #include "libavcodec/avcodec.h"
 #include "libavcodec/packet.h"
 #include "libavutil/frame.h"
 #include "libavutil/mathematics.h"
 #include "libavutil/samplefmt.h"
 #include "libswresample/swresample.h"
+}
 #include <cstdint>
 
 void AudioDecoder::clean() {
