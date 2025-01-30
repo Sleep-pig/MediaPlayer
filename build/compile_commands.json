@@ -7,6 +7,24 @@
 },
 {
   "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/core/ControlWidget.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp",
+  "output": "src/UI/CMakeFiles/MediaPlayer.dir/core/ControlWidget.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/core/ShowWidget.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/UI/core/ShowWidget.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ShowWidget.cpp",
+  "output": "src/UI/CMakeFiles/MediaPlayer.dir/core/ShowWidget.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/core/Slider.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp",
+  "output": "src/UI/CMakeFiles/MediaPlayer.dir/core/Slider.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include -I/home/jie/workspace/cpp/MediaPlayer/src/UI/include -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/UI/CMakeFiles/MediaPlayer.dir/core/main.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp",
   "file": "/home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp",
   "output": "src/UI/CMakeFiles/MediaPlayer.dir/core/main.cpp.o"
@@ -31,8 +49,20 @@
 },
 {
   "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/core/audioThread.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/Media/core/audioThread.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/Media/core/audioThread.cpp",
+  "output": "src/Media/CMakeFiles/media.dir/core/audioThread.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/core/decode.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp",
   "file": "/home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp",
   "output": "src/Media/CMakeFiles/media.dir/core/decode.cpp.o"
+},
+{
+  "directory": "/home/jie/workspace/cpp/MediaPlayer/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I/home/jie/workspace/cpp/MediaPlayer/build/src/Media/media_autogen/include -I/usr/include/ffmpeg5.1.6 -I/home/jie/workspace/cpp/MediaPlayer/src/Media/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtMultimedia -isystem /usr/include/qt/QtNetwork -g -std=gnu++17 -fPIC -o src/Media/CMakeFiles/media.dir/core/videoThread.cpp.o -c /home/jie/workspace/cpp/MediaPlayer/src/Media/core/videoThread.cpp",
+  "file": "/home/jie/workspace/cpp/MediaPlayer/src/Media/core/videoThread.cpp",
+  "output": "src/Media/CMakeFiles/media.dir/core/videoThread.cpp.o"
 }
 ]

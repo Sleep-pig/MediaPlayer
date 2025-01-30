@@ -9,7 +9,27 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "MediaPlayer_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_ControlWidget.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ShowWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_ShowWidget.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp",
+			"MU",
+			"6YEA5652QU/moc_Slider.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/mocs_compilation.cpp",
@@ -71,6 +91,21 @@
 	"SETTINGS_FILE" : "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/CMakeFiles/MediaPlayer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ShowWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp",
 			"MU",

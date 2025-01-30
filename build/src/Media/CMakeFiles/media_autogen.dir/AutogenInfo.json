@@ -24,6 +24,12 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/audioThread.hpp",
+			"MU",
+			"6YEA5652QU/moc_audioThread.cpp",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp",
 			"MU",
 			"6YEA5652QU/moc_decode.cpp",
@@ -33,6 +39,12 @@
 			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/playerCommand.hpp",
 			"MU",
 			"6YEA5652QU/moc_playerCommand.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp",
+			"MU",
+			"6YEA5652QU/moc_videoThread.cpp",
 			null
 		]
 	],
@@ -108,7 +120,17 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/core/audioThread.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/Media/core/videoThread.cpp",
 			"MU",
 			null
 		]

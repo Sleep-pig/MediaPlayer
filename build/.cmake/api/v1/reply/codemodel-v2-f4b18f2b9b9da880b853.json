@@ -81,7 +81,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "MediaPlayer::@e6812f907734570e2a17",
-					"jsonFile" : "target-MediaPlayer-Debug-e4322cabfb21a88f457f.json",
+					"jsonFile" : "target-MediaPlayer-Debug-5c8f97b0e892d41f9722.json",
 					"name" : "MediaPlayer",
 					"projectIndex" : 0
 				},
@@ -102,7 +102,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "media::@e31e7b15e66d74234855",
-					"jsonFile" : "target-media-Debug-7c5de6c0b525a82f0774.json",
+					"jsonFile" : "target-media-Debug-3d357d4827d44dc804d2.json",
 					"name" : "media",
 					"projectIndex" : 0
 				},
