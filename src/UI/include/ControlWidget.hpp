@@ -1,16 +1,19 @@
 #pragma once
-#include "Slider.hpp"
 #include "audioThread.hpp"
 #include "decode.hpp"
 #include "playerCommand.hpp"
+#include "Slider.hpp"
 #include "videoThread.hpp"
-#include <QWidget>
 #include <QLabel>
-#include <QPushButton>
 #include <QMenu>
+#include <QPushButton>
 #include <qthread.h>
+#include <QWidget>
+
 class ControlWidget : public QWidget {
     Q_OBJECT
+
+    friend class ShowWidget;
 
 private:
     QWidget *sliderWidget{nullptr};
@@ -19,7 +22,6 @@ private:
     QLabel *totalTimeLabel{nullptr};
     QPushButton *btn{nullptr};
     QMenu *menu{nullptr};
-
 
     Decode *decode_th{nullptr};
     VideoThread *video_th{nullptr};
@@ -31,14 +33,20 @@ private:
     int m_type{NONE};
 
     bool isPlay = false;
-    
+
 public:
     explicit ControlWidget(QWidget *parent = nullptr);
     ~ControlWidget();
 
-    const Decode *decodethPtr() { return decode_th; }
-    const VideoThread *videothPtr() { return video_th; }
-    void showVideo(const QString &path);
-    void resumeUI();
-    void changePlayState();
+    Decode const *decodethPtr() {
+        return decode_th;
+    }
+
+    VideoThread const *videothPtr() {
+        return video_th;
+    }
+
+    // void showVideo(const QString &path);
+    // void resumeUI();
+    // void changePlayState();
 };

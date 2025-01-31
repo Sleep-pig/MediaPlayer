@@ -1,16 +1,25 @@
 #include "ShowWidget.hpp"
-#include <ffmpeg5.1.6/libavutil/hwcontext.h>
+#include "MediaDialog.hpp"
 #include <qdebug.h>
 #include <qglobal.h>
+#include <qlayoutitem.h>
 #include <QVBoxLayout>
 
 ShowWidget::ShowWidget(QWidget *parent) : QWidget(parent) {
     QVBoxLayout *layout = new QVBoxLayout(this);
     this->setLayout(layout);
     layout->setContentsMargins(0, 0, 0, 0);
+    MediaDialog *f = dynamic_cast<MediaDialog *>(parent);
+    int height = f->controlWidget->sliderWidget->height();
+    QSpacerItem *lowerSpacer = new QSpacerItem(
+        this->width(), height, QSizePolicy::Fixed, QSizePolicy::Minimum);
+    layout->addItem(lowerSpacer);
     backgroundWidget = new QWidget(this);
     backgroundWidget->setStyleSheet("background-color: black;");
     layout->addWidget(backgroundWidget);
+    QSpacerItem *upperSpacer = new QSpacerItem(
+        this->width(), height, QSizePolicy::Fixed, QSizePolicy::Minimum);
+    layout->addItem(upperSpacer);
 }
 
 void ShowWidget::onInitVideoOutput(int format) {
@@ -44,6 +53,6 @@ void ShowWidget::onInitVideoOutput(int format) {
 void ShowWidget::recvFrame(uint8_t *pixeldata, int pixelwidth,
                            int pixelHeight) {
     if (glWidget) {
-        //todo  setPixelData
+        // todo  setPixelData
     }
 }

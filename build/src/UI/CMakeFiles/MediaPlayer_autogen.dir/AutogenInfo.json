@@ -18,6 +18,18 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/MediaDialog.hpp",
+			"MU",
+			"6YEA5652QU/moc_MediaDialog.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/MediaPlayer.hpp",
+			"MU",
+			"6YEA5652QU/moc_MediaPlayer.cpp",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ShowWidget.hpp",
 			"MU",
 			"6YEA5652QU/moc_ShowWidget.cpp",
@@ -93,6 +105,16 @@
 	[
 		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/MediaDialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/MediaPlayer.cpp",
 			"MU",
 			null
 		],

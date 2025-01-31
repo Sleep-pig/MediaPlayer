@@ -3,11 +3,15 @@ media_autogen/timestamp: \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/CMakeLists.txt \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/AudioDecoder.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/VideoDecoder.cpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/audioThread.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/decode.cpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/core/videoThread.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/AudioDecoder.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/VideoDecoder.hpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/audioThread.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/playerCommand.hpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
 	/usr/include/asm/errno.h \
@@ -305,6 +309,7 @@ media_autogen/timestamp: \
 	/usr/include/qt/QtCore/QDebug \
 	/usr/include/qt/QtCore/QIODevice \
 	/usr/include/qt/QtCore/QMetaType \
+	/usr/include/qt/QtCore/QObject \
 	/usr/include/qt/QtCore/QQueue \
 	/usr/include/qt/QtCore/QThread \
 	/usr/include/qt/QtCore/qalgorithms.h \

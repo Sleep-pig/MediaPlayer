@@ -8,10 +8,14 @@ MediaPlayer_autogen/timestamp: \
 	/home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/CMakeLists.txt \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/MediaDialog.cpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/MediaPlayer.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ShowWidget.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/core/main.cpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/UI/include/MediaDialog.hpp \
+	/home/jie/workspace/cpp/MediaPlayer/src/UI/include/MediaPlayer.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ShowWidget.hpp \
 	/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp \
 	/usr/include/asm-generic/errno-base.h \
