@@ -346,21 +346,22 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				12
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13
+				14
 			]
 		}
 	],
@@ -422,6 +423,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/UI/include/MediaPlayer.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/UI/include/OpenGlWidget.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
