@@ -2,8 +2,7 @@
 #include <QWidget>
 #include <cstdint>
 #include <qobjectdefs.h>
-#include <qwidget.h>
-class BaseOpenGLWidget;
+#include <OpenGLWidget.hpp>
 class ShowWidget : public QWidget {
     Q_OBJECT
 public slots:
@@ -12,7 +11,7 @@ public slots:
 
 private:
     int curGLWidgetFormat{-1};
-    BaseOpenGLWidget *glWidget{nullptr};
+    BaseOpenGlWideget *glWidget{nullptr};
     QWidget *backgroundWidget{nullptr};
 
 public:

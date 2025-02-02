@@ -7,8 +7,12 @@
   /home/jie/workspace/cpp/MediaPlayer/src/Media/include/playerCommand.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp \
+  /home/jie/workspace/cpp/MediaPlayer/src/UI/include/OpenGLWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ShowWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
+  /usr/include/KHR/khrplatform.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -309,6 +313,7 @@
   /usr/include/qt/QtCore/QMetaType \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/QQueue \
+  /usr/include/qt/QtCore/QScopedPointer \
   /usr/include/qt/QtCore/QThread \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -376,27 +381,45 @@
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QOpenGLBuffer \
+  /usr/include/qt/QtGui/QOpenGLFunctions \
+  /usr/include/qt/QtGui/QOpenGLShaderProgram \
+  /usr/include/qt/QtGui/QSurfaceFormat \
   /usr/include/qt/QtGui/qbrush.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qcursor.h \
   /usr/include/qt/QtGui/qfont.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtGui/qfontmetrics.h \
+  /usr/include/qt/QtGui/qgenericmatrix.h \
   /usr/include/qt/QtGui/qicon.h \
   /usr/include/qt/QtGui/qimage.h \
   /usr/include/qt/QtGui/qkeysequence.h \
   /usr/include/qt/QtGui/qmatrix.h \
+  /usr/include/qt/QtGui/qmatrix4x4.h \
+  /usr/include/qt/QtGui/qopengl.h \
+  /usr/include/qt/QtGui/qopenglbuffer.h \
+  /usr/include/qt/QtGui/qopenglcontext.h \
+  /usr/include/qt/QtGui/qopenglext.h \
+  /usr/include/qt/QtGui/qopenglfunctions.h \
+  /usr/include/qt/QtGui/qopenglshaderprogram.h \
+  /usr/include/qt/QtGui/qopenglversionfunctions.h \
   /usr/include/qt/QtGui/qpaintdevice.h \
   /usr/include/qt/QtGui/qpalette.h \
   /usr/include/qt/QtGui/qpixelformat.h \
   /usr/include/qt/QtGui/qpixmap.h \
   /usr/include/qt/QtGui/qpolygon.h \
+  /usr/include/qt/QtGui/qquaternion.h \
   /usr/include/qt/QtGui/qregion.h \
   /usr/include/qt/QtGui/qrgb.h \
   /usr/include/qt/QtGui/qrgba64.h \
+  /usr/include/qt/QtGui/qsurfaceformat.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
   /usr/include/qt/QtGui/qtransform.h \
+  /usr/include/qt/QtGui/qvector2d.h \
+  /usr/include/qt/QtGui/qvector3d.h \
+  /usr/include/qt/QtGui/qvector4d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
   /usr/include/qt/QtMultimedia/QAudioOutput \
   /usr/include/qt/QtMultimedia/qaudio.h \
@@ -408,6 +431,7 @@
   /usr/include/qt/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/qt/QtWidgets/QLabel \
   /usr/include/qt/QtWidgets/QMenu \
+  /usr/include/qt/QtWidgets/QOpenGLWidget \
   /usr/include/qt/QtWidgets/QPushButton \
   /usr/include/qt/QtWidgets/QSlider \
   /usr/include/qt/QtWidgets/QWidget \
@@ -418,6 +442,7 @@
   /usr/include/qt/QtWidgets/qframe.h \
   /usr/include/qt/QtWidgets/qlabel.h \
   /usr/include/qt/QtWidgets/qmenu.h \
+  /usr/include/qt/QtWidgets/qopenglwidget.h \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
   /usr/include/qt/QtWidgets/qslider.h \

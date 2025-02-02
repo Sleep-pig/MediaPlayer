@@ -30,9 +30,15 @@
 			null
 		],
 		[
-			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/OpenGlWidget.hpp",
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Nv12GLWidget.hpp",
 			"MU",
-			"6YEA5652QU/moc_OpenGlWidget.cpp",
+			"6YEA5652QU/moc_Nv12GLWidget.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/OpenGLWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_OpenGLWidget.cpp",
 			null
 		],
 		[
@@ -45,6 +51,12 @@
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp",
 			"MU",
 			"6YEA5652QU/moc_Slider.cpp",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Yuv420GLWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_Yuv420GLWidget.cpp",
 			null
 		]
 	],
@@ -125,12 +137,27 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Nv12GLWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/OpenGLWidget.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ShowWidget.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Yuv420GLWidget.cpp",
 			"MU",
 			null
 		],
