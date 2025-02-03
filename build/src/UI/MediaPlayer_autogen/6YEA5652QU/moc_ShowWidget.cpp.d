@@ -2,8 +2,6 @@
   /home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/moc_predefs.h \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/OpenGLWidget.hpp \
   /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -345,9 +343,12 @@
   /usr/include/qt/QtGui/qvector4d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
   /usr/include/qt/QtWidgets/QOpenGLWidget \
+  /usr/include/qt/QtWidgets/QStackedWidget \
   /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qframe.h \
   /usr/include/qt/QtWidgets/qopenglwidget.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
+  /usr/include/qt/QtWidgets/qstackedwidget.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtWidgets/qwidget.h \

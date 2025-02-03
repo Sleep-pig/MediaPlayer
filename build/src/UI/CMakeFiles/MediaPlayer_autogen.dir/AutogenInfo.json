@@ -80,6 +80,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/usr/include/ffmpeg5.1.6",
 		"/home/jie/workspace/cpp/MediaPlayer/src/UI/include",
 		"/home/jie/workspace/cpp/MediaPlayer/src/Media/include",
 		"/usr/include/qt",
