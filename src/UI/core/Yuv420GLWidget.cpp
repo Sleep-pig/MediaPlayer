@@ -27,12 +27,10 @@ static GLfloat const yuv420_vertices[]{
 
 void Yuv420GLWidget::initializeGL() {
     initGLFuncs(this);
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     initShader(yuv420_vertices, sizeof(yuv420_vertices), yuv420_fsrc);
     textureUniformY = programUniformLocation("textureY");
     textureUniformU = programUniformLocation("textureU");
     textureUniformV = programUniformLocation("textureV");
-
     auto textureY = new QOpenGLTexture(QOpenGLTexture::Target2D);
     auto textureU = new QOpenGLTexture(QOpenGLTexture::Target2D);
     auto textureV = new QOpenGLTexture(QOpenGLTexture::Target2D);
@@ -48,9 +46,8 @@ void Yuv420GLWidget::paintGL() {
     if (dataPtr == nullptr) {
         return;
     }
-
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // 清除颜色和深度缓冲区
-    glDisable(GL_DEPTH_TEST);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // 注释后画面卡死
+    glDisable(GL_DEPTH_TEST); // 关闭深度测试, 注释后内存占用增加
     glViewport(x, y, viewW, viewH);
 
     int halfW = videoW >> 1;
@@ -60,7 +57,7 @@ void Yuv420GLWidget::paintGL() {
     loadTexture(this, GL_TEXTURE1, idU, halfW, halfH, GL_RED,
                 dataPtr.get() + videoW * videoH);
     loadTexture(this, GL_TEXTURE2, idV, halfW, halfH, GL_RED,
-                dataPtr.get() + videoW * videoH * 5);
+                dataPtr.get() + halfW * halfH * 5);
 
     glUniform1i(textureUniformY, 0);
     glUniform1i(textureUniformU, 1);

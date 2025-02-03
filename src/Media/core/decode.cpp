@@ -82,14 +82,11 @@ int64_t Decode::getDuration() const {
     }
 
     // 流的总时长 ms
-    int64_t duration_ms =
-        (formatContext->duration / (int64_t)AV_TIME_BASE / 1000);
+    int64_t ret = (formatContext->duration / ((int64_t)AV_TIME_BASE / 1000));
     qDebug() << "duration: "
-             << QString("%02d:%02d:%02d")
-                    .arg(duration_ms / 1000 / 3600)
-                    .arg(duration_ms / 1000 / 60 % 60)
-                    .arg(duration_ms / 1000 % 60);
-    return duration_ms;
+             << QString::asprintf("%02d:%02d:%02d", ret / 1000 / 3600,
+                                  ret / 1000 / 60 % 60, ret / 1000 % 60);
+    return ret;
 }
 
 QList<QString> Decode::getSupportedHwDecoderNames() {

@@ -1,0 +1,137 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src/UI",
+					"jsonFile" : "directory-src.UI-Debug-1086fd47cd6af5181f43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/UI",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "src/Media",
+					"jsonFile" : "directory-src.Media-Debug-3a9a0910e7251cacee77.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/Media",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "MediaPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "MediaPlayer::@e6812f907734570e2a17",
+					"jsonFile" : "target-MediaPlayer-Debug-b1d9579c546100351d52.json",
+					"name" : "MediaPlayer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MediaPlayer_autogen::@e6812f907734570e2a17",
+					"jsonFile" : "target-MediaPlayer_autogen-Debug-8422e26c14003864465c.json",
+					"name" : "MediaPlayer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MediaPlayer_autogen_timestamp_deps::@e6812f907734570e2a17",
+					"jsonFile" : "target-MediaPlayer_autogen_timestamp_deps-Debug-7a56530f74cd2a300d76.json",
+					"name" : "MediaPlayer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "media::@e31e7b15e66d74234855",
+					"jsonFile" : "target-media-Debug-a5b354315c520d91ef91.json",
+					"name" : "media",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "media_autogen::@e31e7b15e66d74234855",
+					"jsonFile" : "target-media_autogen-Debug-22c2ea9be5168282ef40.json",
+					"name" : "media_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "media_autogen_timestamp_deps::@e31e7b15e66d74234855",
+					"jsonFile" : "target-media_autogen_timestamp_deps-Debug-59e542330f005d9753c9.json",
+					"name" : "media_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jie/workspace/cpp/MediaPlayer/build",
+		"source" : "/home/jie/workspace/cpp/MediaPlayer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

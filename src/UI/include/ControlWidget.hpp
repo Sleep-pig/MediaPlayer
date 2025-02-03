@@ -14,7 +14,21 @@ class ControlWidget : public QWidget {
     Q_OBJECT
 
     friend class ShowWidget;
+signals:
+    void startPlay();
+    void leftClicked();
+    void rightClicked();
+    // 全屏请求
+    void fullScreenRequest();
 
+private slots:
+    // 响应音频进度条
+    void onAudioClockChanged(int pts_seconds);
+
+    // 强制关闭
+    void terminatePlay();
+
+    void onPlayOver(); // 播放结束
 private:
     QWidget *sliderWidget{nullptr};
     Slider *slider{nullptr};
@@ -46,7 +60,7 @@ public:
         return video_th;
     }
 
-    // void showVideo(const QString &path);
-    // void resumeUI();
-    // void changePlayState();
+    void showVideo(const QString &path);
+    void resumeUI();
+    void changePlayState();
 };

@@ -60,7 +60,7 @@ void AudioThread::recvAudioPacket(AVPacket *packet) {
 }
 
 void AudioThread::recvAudioBuffer(uint8_t *data, int size, double pts) {
-    curPtsMs += pts;
+    curPtsMs = pts;
     int curPtsSec = pts / 1000;
     while (audioOutput->bytesFree() < size) {
         QThread::msleep(10);

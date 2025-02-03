@@ -1,6 +1,5 @@
 #pragma once
 #include <cstdint>
-#include <GL/gl.h>
 #include <memory>
 #include <QOpenGLBuffer>
 #include <QOpenGLFunctions>
@@ -41,7 +40,7 @@ static void loadTexture(QOpenGLFunctions *glFuncs, GLenum textureType,
                              GL_CLAMP_TO_EDGE);
 }
 
-class BaseOpenGlWideget : public QOpenGLWidget {
+class BaseOpenGLWidget : public QOpenGLWidget {
 private:
     QOpenGLBuffer vbo;
     QOpenGLShaderProgram *program{nullptr};
@@ -61,7 +60,7 @@ protected:
     }
 
 public:
-    BaseOpenGlWideget(QWidget *parent = nullptr) : QOpenGLWidget(parent) {}
+    BaseOpenGLWidget(QWidget *parent = nullptr) : QOpenGLWidget(parent) {}
 
     void setPixelData(uint8_t *pixelData, int width, int height);
 };

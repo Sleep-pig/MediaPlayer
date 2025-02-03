@@ -15,4 +15,8 @@ MediaDialog::MediaDialog(QWidget *parent) : QWidget(parent) {
 
     stackedLayout->setCurrentIndex(1);
     stackedLayout->setStackingMode(QStackedLayout::StackAll);
+      connect(controlWidget->decodethPtr(), &Decode::initVideoOutput, showWidget,
+            &ShowWidget::onInitVideoOutput);
+    connect(controlWidget->videothPtr(), &VideoThread::SendFrame, showWidget,
+            &ShowWidget::recvFrame);
 }

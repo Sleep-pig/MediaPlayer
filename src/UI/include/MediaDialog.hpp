@@ -17,9 +17,11 @@ private:
 
 public:
     MediaDialog(QWidget *parent = nullptr);
-    ~MediaDialog() = default;
+    ~MediaDialog() {
+        qDebug() << "MediaDialog::~MediaDialog()";
+    };
 
-    // void showVideo(QString const &path) {
-    //     controlWidget->showVideo(path);
-    // }
+    void showVideo(QString const &path) {
+        controlWidget->showVideo(path);
+    }
 };

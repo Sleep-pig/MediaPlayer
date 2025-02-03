@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <qobjectdefs.h>
 #include <OpenGLWidget.hpp>
+#include <QStackedWidget>
 class ShowWidget : public QWidget {
     Q_OBJECT
 public slots:
@@ -11,8 +12,9 @@ public slots:
 
 private:
     int curGLWidgetFormat{-1};
-    BaseOpenGlWideget *glWidget{nullptr};
+    BaseOpenGLWidget *glWidget{nullptr};
     QWidget *backgroundWidget{nullptr};
+    QStackedWidget *stackedWidget{nullptr};
 
 public:
     explicit ShowWidget(QWidget *parent = nullptr);

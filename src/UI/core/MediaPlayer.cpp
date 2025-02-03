@@ -44,7 +44,7 @@ MediaPlayer::MediaPlayer(QWidget *parent) : QWidget(parent) {
             lineEdit->setText(
                 path.mid(path.lastIndexOf("/") + 1,
                          path.lastIndexOf(".") - path.lastIndexOf("/") - 1));
-            // w->showVideo(path);
+            w->showVideo(path);
         }
     });
 }
