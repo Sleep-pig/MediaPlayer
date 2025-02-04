@@ -8,25 +8,25 @@
 #include <QVBoxLayout>
 
 ShowWidget::ShowWidget(QWidget *parent) : QWidget(parent) {
-  QVBoxLayout *layout = new QVBoxLayout(this);
+    QVBoxLayout *layout = new QVBoxLayout(this);
     this->setLayout(layout);
     layout->setContentsMargins(0, 0, 0, 0);
     MediaDialog *f = dynamic_cast<MediaDialog *>(parent);
+
+    auto upheight = f->controlWidget->titlebar->height();
+    QSpacerItem *upperSpacer = new QSpacerItem(
+        this->width(), upheight, QSizePolicy::Fixed, QSizePolicy::Minimum);
+    layout->addItem(upperSpacer);
+    stackedWidget = new QStackedWidget(this);
+    backgroundWidget = new QWidget(this);
+    backgroundWidget->setStyleSheet("background-color: black;");
+
+    stackedWidget->addWidget(backgroundWidget);
+    layout->addWidget(stackedWidget);
     int height = f->controlWidget->sliderWidget->height();
     QSpacerItem *lowerSpacer = new QSpacerItem(
-        this->width(), height, QSizePolicy::Fixed, QSizePolicy::Minimum);
+        this->width(), height - 10, QSizePolicy::Fixed, QSizePolicy::Minimum);
     layout->addItem(lowerSpacer);
-    this->setStyleSheet("background-color: black;");
-    stackedWidget = new QStackedWidget(this);
-
-    //backgroundWidget = new QWidget(this);
-    //backgroundWidget->setStyleSheet("background-color: black;");
-
-    //stackedWidget->addWidget(backgroundWidget);
-    layout->addWidget(stackedWidget);
-    QSpacerItem *upperSpacer = new QSpacerItem(
-        this->width(), height, QSizePolicy::Fixed, QSizePolicy::Minimum);
-    layout->addItem(upperSpacer);
 }
 
 void ShowWidget::onInitVideoOutput(int format) {

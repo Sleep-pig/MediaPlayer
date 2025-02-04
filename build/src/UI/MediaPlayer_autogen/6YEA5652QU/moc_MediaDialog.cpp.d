@@ -6,10 +6,12 @@
   /home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/Media/include/playerCommand.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp \
+  /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ClickedLabel.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/OpenGLWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ShowWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp \
+  /home/jie/workspace/cpp/MediaPlayer/src/UI/include/TitleWidget.hpp \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -325,11 +327,14 @@
   /usr/include/qt/QtCore/qcontainerfwd.h \
   /usr/include/qt/QtCore/qcontainertools_impl.h \
   /usr/include/qt/QtCore/qcontiguouscache.h \
+  /usr/include/qt/QtCore/qcoreevent.h \
   /usr/include/qt/QtCore/qdatastream.h \
   /usr/include/qt/QtCore/qdatetime.h \
   /usr/include/qt/QtCore/qdeadlinetimer.h \
   /usr/include/qt/QtCore/qdebug.h \
   /usr/include/qt/QtCore/qelapsedtimer.h \
+  /usr/include/qt/QtCore/qfile.h \
+  /usr/include/qt/QtCore/qfiledevice.h \
   /usr/include/qt/QtCore/qflags.h \
   /usr/include/qt/QtCore/qglobal.h \
   /usr/include/qt/QtCore/qglobalstatic.h \
@@ -375,10 +380,12 @@
   /usr/include/qt/QtCore/qtextstream.h \
   /usr/include/qt/QtCore/qthread.h \
   /usr/include/qt/QtCore/qtypeinfo.h \
+  /usr/include/qt/QtCore/qurl.h \
   /usr/include/qt/QtCore/qvariant.h \
   /usr/include/qt/QtCore/qvarlengtharray.h \
   /usr/include/qt/QtCore/qvector.h \
   /usr/include/qt/QtCore/qversiontagging.h \
+  /usr/include/qt/QtGui/QMouseEvent \
   /usr/include/qt/QtGui/QOpenGLBuffer \
   /usr/include/qt/QtGui/QOpenGLFunctions \
   /usr/include/qt/QtGui/QOpenGLShaderProgram \
@@ -386,6 +393,7 @@
   /usr/include/qt/QtGui/qbrush.h \
   /usr/include/qt/QtGui/qcolor.h \
   /usr/include/qt/QtGui/qcursor.h \
+  /usr/include/qt/QtGui/qevent.h \
   /usr/include/qt/QtGui/qfont.h \
   /usr/include/qt/QtGui/qfontinfo.h \
   /usr/include/qt/QtGui/qfontmetrics.h \
@@ -414,6 +422,7 @@
   /usr/include/qt/QtGui/qsurfaceformat.h \
   /usr/include/qt/QtGui/qtgui-config.h \
   /usr/include/qt/QtGui/qtguiglobal.h \
+  /usr/include/qt/QtGui/qtouchdevice.h \
   /usr/include/qt/QtGui/qtransform.h \
   /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qvector3d.h \

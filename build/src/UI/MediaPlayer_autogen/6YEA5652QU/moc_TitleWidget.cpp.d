@@ -1,14 +1,6 @@
-/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/6YEA5652QU/moc_ControlWidget.cpp: /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp \
+/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/6YEA5652QU/moc_TitleWidget.cpp: /home/jie/workspace/cpp/MediaPlayer/src/UI/include/TitleWidget.hpp \
   /home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/moc_predefs.h \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/AudioDecoder.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/VideoDecoder.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/audioThread.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/decode.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/playerCommand.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/Media/include/videoThread.hpp \
   /home/jie/workspace/cpp/MediaPlayer/src/UI/include/ClickedLabel.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/UI/include/Slider.hpp \
-  /home/jie/workspace/cpp/MediaPlayer/src/UI/include/TitleWidget.hpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
@@ -141,7 +133,6 @@
   /usr/include/c++/14.2.1/bits/shared_ptr.h \
   /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/14.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/14.2.1/bits/specfun.h \
   /usr/include/c++/14.2.1/bits/std_abs.h \
   /usr/include/c++/14.2.1/bits/std_function.h \
   /usr/include/c++/14.2.1/bits/std_mutex.h \
@@ -182,7 +173,6 @@
   /usr/include/c++/14.2.1/charconv \
   /usr/include/c++/14.2.1/climits \
   /usr/include/c++/14.2.1/clocale \
-  /usr/include/c++/14.2.1/cmath \
   /usr/include/c++/14.2.1/compare \
   /usr/include/c++/14.2.1/concepts \
   /usr/include/c++/14.2.1/cstddef \
@@ -202,7 +192,6 @@
   /usr/include/c++/14.2.1/ext/type_traits.h \
   /usr/include/c++/14.2.1/format \
   /usr/include/c++/14.2.1/functional \
-  /usr/include/c++/14.2.1/future \
   /usr/include/c++/14.2.1/initializer_list \
   /usr/include/c++/14.2.1/ios \
   /usr/include/c++/14.2.1/iosfwd \
@@ -210,7 +199,6 @@
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/list \
   /usr/include/c++/14.2.1/map \
-  /usr/include/c++/14.2.1/math.h \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/numbers \
@@ -225,18 +213,6 @@
   /usr/include/c++/14.2.1/string \
   /usr/include/c++/14.2.1/string_view \
   /usr/include/c++/14.2.1/text_encoding \
-  /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/14.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/14.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/14.2.1/tr1/gamma.tcc \
-  /usr/include/c++/14.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/14.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14.2.1/tr1/special_function_util.h \
   /usr/include/c++/14.2.1/tuple \
   /usr/include/c++/14.2.1/type_traits \
   /usr/include/c++/14.2.1/typeinfo \
@@ -258,58 +234,11 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/avcodec.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/codec.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/codec_desc.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/codec_id.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/codec_par.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/defs.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/packet.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/version.h \
-  /usr/include/ffmpeg5.1.6/libavcodec/version_major.h \
-  /usr/include/ffmpeg5.1.6/libavformat/avformat.h \
-  /usr/include/ffmpeg5.1.6/libavformat/avio.h \
-  /usr/include/ffmpeg5.1.6/libavformat/version.h \
-  /usr/include/ffmpeg5.1.6/libavformat/version_major.h \
-  /usr/include/ffmpeg5.1.6/libavutil/attributes.h \
-  /usr/include/ffmpeg5.1.6/libavutil/avconfig.h \
-  /usr/include/ffmpeg5.1.6/libavutil/avutil.h \
-  /usr/include/ffmpeg5.1.6/libavutil/buffer.h \
-  /usr/include/ffmpeg5.1.6/libavutil/channel_layout.h \
-  /usr/include/ffmpeg5.1.6/libavutil/common.h \
-  /usr/include/ffmpeg5.1.6/libavutil/dict.h \
-  /usr/include/ffmpeg5.1.6/libavutil/error.h \
-  /usr/include/ffmpeg5.1.6/libavutil/frame.h \
-  /usr/include/ffmpeg5.1.6/libavutil/hwcontext.h \
-  /usr/include/ffmpeg5.1.6/libavutil/imgutils.h \
-  /usr/include/ffmpeg5.1.6/libavutil/intfloat.h \
-  /usr/include/ffmpeg5.1.6/libavutil/log.h \
-  /usr/include/ffmpeg5.1.6/libavutil/macros.h \
-  /usr/include/ffmpeg5.1.6/libavutil/mathematics.h \
-  /usr/include/ffmpeg5.1.6/libavutil/mem.h \
-  /usr/include/ffmpeg5.1.6/libavutil/pixdesc.h \
-  /usr/include/ffmpeg5.1.6/libavutil/pixfmt.h \
-  /usr/include/ffmpeg5.1.6/libavutil/rational.h \
-  /usr/include/ffmpeg5.1.6/libavutil/samplefmt.h \
-  /usr/include/ffmpeg5.1.6/libavutil/version.h \
-  /usr/include/ffmpeg5.1.6/libswresample/swresample.h \
-  /usr/include/ffmpeg5.1.6/libswresample/version.h \
-  /usr/include/ffmpeg5.1.6/libswresample/version_major.h \
-  /usr/include/ffmpeg5.1.6/libswscale/swscale.h \
-  /usr/include/ffmpeg5.1.6/libswscale/version.h \
-  /usr/include/ffmpeg5.1.6/libswscale/version_major.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
-  /usr/include/qt/QtCore/QDateTime \
-  /usr/include/qt/QtCore/QDebug \
-  /usr/include/qt/QtCore/QIODevice \
-  /usr/include/qt/QtCore/QMetaType \
-  /usr/include/qt/QtCore/QObject \
-  /usr/include/qt/QtCore/QQueue \
-  /usr/include/qt/QtCore/QThread \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
   /usr/include/qt/QtCore/qatomic.h \
@@ -321,13 +250,8 @@
   /usr/include/qt/QtCore/qconfig.h \
   /usr/include/qt/QtCore/qcontainerfwd.h \
   /usr/include/qt/QtCore/qcontainertools_impl.h \
-  /usr/include/qt/QtCore/qcontiguouscache.h \
   /usr/include/qt/QtCore/qcoreevent.h \
   /usr/include/qt/QtCore/qdatastream.h \
-  /usr/include/qt/QtCore/qdatetime.h \
-  /usr/include/qt/QtCore/qdeadlinetimer.h \
-  /usr/include/qt/QtCore/qdebug.h \
-  /usr/include/qt/QtCore/qelapsedtimer.h \
   /usr/include/qt/QtCore/qfile.h \
   /usr/include/qt/QtCore/qfiledevice.h \
   /usr/include/qt/QtCore/qflags.h \
@@ -339,7 +263,6 @@
   /usr/include/qt/QtCore/qiterator.h \
   /usr/include/qt/QtCore/qline.h \
   /usr/include/qt/QtCore/qlist.h \
-  /usr/include/qt/QtCore/qlocale.h \
   /usr/include/qt/QtCore/qlogging.h \
   /usr/include/qt/QtCore/qmap.h \
   /usr/include/qt/QtCore/qmargins.h \
@@ -353,7 +276,6 @@
   /usr/include/qt/QtCore/qpair.h \
   /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtCore/qprocessordetection.h \
-  /usr/include/qt/QtCore/qqueue.h \
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/qt/QtCore/qrefcount.h \
   /usr/include/qt/QtCore/qregexp.h \
@@ -372,8 +294,6 @@
   /usr/include/qt/QtCore/qsysinfo.h \
   /usr/include/qt/QtCore/qsystemdetection.h \
   /usr/include/qt/QtCore/qtcore-config.h \
-  /usr/include/qt/QtCore/qtextstream.h \
-  /usr/include/qt/QtCore/qthread.h \
   /usr/include/qt/QtCore/qtypeinfo.h \
   /usr/include/qt/QtCore/qurl.h \
   /usr/include/qt/QtCore/qvariant.h \
@@ -406,29 +326,13 @@
   /usr/include/qt/QtGui/qtransform.h \
   /usr/include/qt/QtGui/qvector2d.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
-  /usr/include/qt/QtMultimedia/QAudioOutput \
-  /usr/include/qt/QtMultimedia/qaudio.h \
-  /usr/include/qt/QtMultimedia/qaudiodeviceinfo.h \
-  /usr/include/qt/QtMultimedia/qaudioformat.h \
-  /usr/include/qt/QtMultimedia/qaudiooutput.h \
-  /usr/include/qt/QtMultimedia/qmultimedia.h \
-  /usr/include/qt/QtMultimedia/qtmultimedia-config.h \
-  /usr/include/qt/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/qt/QtWidgets/QLabel \
-  /usr/include/qt/QtWidgets/QMenu \
-  /usr/include/qt/QtWidgets/QPushButton \
-  /usr/include/qt/QtWidgets/QSlider \
   /usr/include/qt/QtWidgets/QWidget \
   /usr/include/qt/QtWidgets/qabstractbutton.h \
-  /usr/include/qt/QtWidgets/qabstractslider.h \
-  /usr/include/qt/QtWidgets/qaction.h \
-  /usr/include/qt/QtWidgets/qactiongroup.h \
   /usr/include/qt/QtWidgets/qframe.h \
   /usr/include/qt/QtWidgets/qlabel.h \
-  /usr/include/qt/QtWidgets/qmenu.h \
   /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
-  /usr/include/qt/QtWidgets/qslider.h \
   /usr/include/qt/QtWidgets/qtwidgets-config.h \
   /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt/QtWidgets/qwidget.h \
@@ -455,7 +359,6 @@
   /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
   /usr/lib/clang/19/include/__stddef_size_t.h \
   /usr/lib/clang/19/include/__stddef_wchar_t.h \
-  /usr/lib/clang/19/include/inttypes.h \
   /usr/lib/clang/19/include/limits.h \
   /usr/lib/clang/19/include/stdarg.h \
   /usr/lib/clang/19/include/stddef.h \

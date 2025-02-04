@@ -3,17 +3,21 @@
 #include "decode.hpp"
 #include "playerCommand.hpp"
 #include "Slider.hpp"
+#include "TitleWidget.hpp"
 #include "videoThread.hpp"
 #include <QLabel>
 #include <QMenu>
 #include <QPushButton>
 #include <qthread.h>
+#include <qwidget.h>
 #include <QWidget>
 
 class ControlWidget : public QWidget {
     Q_OBJECT
 
     friend class ShowWidget;
+    friend class MediaPlayer;
+    friend class MediaDialog;
 signals:
     void startPlay();
     void leftClicked();
@@ -24,6 +28,9 @@ signals:
 private slots:
     // 响应音频进度条
     void onAudioClockChanged(int pts_seconds);
+
+    // 响应选择播放文件按钮
+    void onslectPlay();
 
     // 响应拖动进度条, 当鼠标压下时暂停, 并保存播放状态
     void startSeek();
@@ -36,6 +43,7 @@ private slots:
 
     void onPlayOver(); // 播放结束
 private:
+    TitleWidget *titlebar{nullptr};
     QWidget *sliderWidget{nullptr};
     Slider *slider{nullptr};
     QLabel *timeLabel{nullptr};
@@ -53,9 +61,12 @@ private:
     int m_type{NONE};
 
     bool isPlay = false;
+    bool isDragging = false;
+    QPoint dragPosition;
 
 protected:
     virtual void mousePressEvent(QMouseEvent *event) override;
+
 
 public:
     explicit ControlWidget(QWidget *parent = nullptr);

@@ -1,52 +1,56 @@
 #include "MediaPlayer.hpp"
 #include "MediaDialog.hpp"
 #include <QFileDialog>
+#include <qglobal.h>
 #include <QHBoxLayout>
 #include <QLineEdit>
+#include <qmainwindow.h>
 #include <QPushButton>
 #include <QStandardPaths>
+#include <qnamespace.h>
+#include <qwidget.h>
 
-MediaPlayer::MediaPlayer(QWidget *parent) : QWidget(parent) {
-    QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->setContentsMargins(0, 0, 0, 0);
-    this->setLayout(layout);
-
-    // 选择视频并播放功能
-    QHBoxLayout *hLayout = new QHBoxLayout();
-    hLayout->setContentsMargins(0, 0, 0, 0);
-    QPushButton *btnSelect = new QPushButton("选择", this);
-    QLineEdit *lineEdit = new QLineEdit(this);
-    lineEdit->setReadOnly(true); // 设置只读
-    hLayout->addWidget(btnSelect);
-    hLayout->addWidget(lineEdit);
-    layout->addLayout(hLayout);
-
-    MediaDialog *w = new MediaDialog(this);
-    layout->addWidget(w);
+MediaPlayer::MediaPlayer(QWidget *parent) : QMainWindow(parent) {
+    setWindowFlags(Qt::FramelessWindowHint);
+    w = new MediaDialog(this);
+    setCentralWidget(w);
     this->resize(700, 400);
 
-    // 连接槽, 选择视频并播放
-    connect(btnSelect, &QPushButton::clicked, [=]() { //
-        // QString test_path = "E:/Anime/GIRLS BAND CRY/[Nekomoe kissaten][GIRLS
-        // BAND CRY][01][1080p][JPSC].mp4"; if (QFileInfo(test_path).isFile())
-        // {
-        //     w->showVideo(test_path);
-        //     return;
-        // }
+    connect(w->controlWidget->titlebar->getMinimizeLb(), &ClickedLabel::clicked,
+            this, &MediaPlayer::showMinimized);
+    connect(w->controlWidget->titlebar->getCloseLb(), &ClickedLabel::clicked,
+            this, &MediaPlayer::close);
+    connect(w->controlWidget->titlebar->getMaximizeLb(), &ClickedLabel::clicked,
+            this, &MediaPlayer::showMaximized);
 
-        QString path = QFileDialog::getOpenFileName(
-            this, "选择视频文件",
-            QStandardPaths::writableLocation(
-                QStandardPaths::StandardLocation::MoviesLocation),
-            "Media Files(*.mp4 *.avi *.mkv *.mp3 *.wav);;All Files(*)");
-        if (!path.isEmpty()) {
-            // 仅显示文件名, 并且去掉后缀
-            lineEdit->setText(
-                path.mid(path.lastIndexOf("/") + 1,
-                         path.lastIndexOf(".") - path.lastIndexOf("/") - 1));
-            w->showVideo(path);
-        }
-    });
+    connect(w, &MediaDialog::startDragging, this,
+            &MediaPlayer::handleStartDragging,Qt::DirectConnection);
+    connect(w, &MediaDialog::dragging, this, &MediaPlayer::handleDragging,Qt::DirectConnection);
+
+    // w->installEventFilter(this);
 }
+
+// bool MediaPlayer::eventFilter(QObject *watched, QEvent *eve) {
+//     QMouseEvent *event = static_cast<QMouseEvent *>(eve);
+//     if (watched == w) {
+//         if (event->pos().y() <= w->controlWidget->titlebar->height()) {
+//             if (event->type() == QEvent::MouseButtonPress) {
+//                 if (event->button() == Qt::LeftButton) {
+//                     mousePressed = true;
+//                     mousePoint = event->globalPos() - this->pos();
+//                     return true;
+//                 }
+//             } else if (event->type() == QEvent::MouseButtonRelease) {
+//                 mousePressed = false;
+//                 return true;
+//             } else if (event->type() == QEvent::MouseMove) {
+//                 MediaPlayer::move(event->globalPos() - mousePoint);
+//                 return true;
+//             }
+//         }
+//     }
+
+//     return QWidget::eventFilter(watched, eve);
+// }
 
 MediaPlayer::~MediaPlayer() {}

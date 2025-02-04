@@ -12,6 +12,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ClickedLabel.hpp",
+			"MU",
+			"6YEA5652QU/moc_ClickedLabel.cpp",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/ControlWidget.hpp",
 			"MU",
 			"6YEA5652QU/moc_ControlWidget.cpp",
@@ -54,6 +60,12 @@
 			null
 		],
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/TitleWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_TitleWidget.cpp",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/include/Yuv420GLWidget.hpp",
 			"MU",
 			"6YEA5652QU/moc_Yuv420GLWidget.cpp",
@@ -65,6 +77,7 @@
 	"MOC_COMPILATION_FILE" : "/home/jie/workspace/cpp/MediaPlayer/build/src/UI/MediaPlayer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"IMG_DIR=\"/home/jie/workspace/cpp/MediaPlayer/src/UI/img\"",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
@@ -123,6 +136,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ClickedLabel.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/ControlWidget.cpp",
 			"MU",
 			null
@@ -154,6 +172,11 @@
 		],
 		[
 			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/Slider.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jie/workspace/cpp/MediaPlayer/src/UI/core/TitleWidget.cpp",
 			"MU",
 			null
 		],

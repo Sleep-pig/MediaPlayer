@@ -1,4 +1,5 @@
 #define ABI_ID "ELF"
+#define IMG_DIR "/home/jie/workspace/cpp/MediaPlayer/src/UI/img"
 #define QT_CORE_LIB 1
 #define QT_GUI_LIB 1
 #define QT_MULTIMEDIA_LIB 1

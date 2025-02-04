@@ -52,7 +52,7 @@ void BaseOpenGLWidget::setPixelData(uint8_t *pixelData, int width, int height) {
         y = 0;                           // 上下不用
     } else { // 窗口瘦高，调整视频上下居中，即宽跟窗口一致，高按照之前视频比例缩放，
         viewW = this->width();
-        viewH = this->width() * videoRatio;
+        viewH = this->width() / videoRatio;
         x = 0;                            // 左右不用
         y = (this->height() - viewH) / 2; // 上下居中
     }

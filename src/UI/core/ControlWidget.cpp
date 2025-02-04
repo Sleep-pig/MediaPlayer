@@ -1,15 +1,31 @@
 #include "ControlWidget.hpp"
+#include "ClickedLabel.hpp"
+#include "TitleWidget.hpp"
 #include <qapplication.h>
 #include <qboxlayout.h>
-#include <QMouseEvent>
 #include <qdebug.h>
+#include <QFileDialog>
 #include <qglobal.h>
+#include <qlabel.h>
+#include <QMouseEvent>
+#include <qpushbutton.h>
+#include <QStandardPaths>
 #include <qwidget.h>
 
 ControlWidget::ControlWidget(QWidget *parent) : QWidget(parent) {
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
+    layout->setSpacing(0);
     this->setLayout(layout);
+
+    // 添加标题栏组
+    titlebar = new TitleWidget(this);
+    titlebar->setFixedHeight(30);
+    layout->addWidget(titlebar);
+
+    // 连接槽, 选择视频并播放
+    connect(titlebar->getSelectedButton(), &QPushButton::clicked, this,
+            &ControlWidget::onslectPlay);
 
     layout->addStretch(); // 添加弹簧 将进度条挤下面
 
@@ -27,29 +43,6 @@ ControlWidget::ControlWidget(QWidget *parent) : QWidget(parent) {
         sliderLayout->addWidget(timeLabel);
 
         slider = new Slider(Qt::Horizontal, sliderWidget);
-        slider->setStyleSheet({R"(
-        background-color: transparent;
-
-        QSlider::groove:horizontal {
-            border: 1px solid #999999;
-            height: 5px;
-            background: #c4c4c4;
-            /*margin: 2px 0;*/
-        }
-        QSlider::handle:horizontal {
-            background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #4CC2FF, stop:0.8 #5c5c5c);
-            border: 2px solid #5c5c5c;
-            width: 17px;
-            height: 18px;
-            margin: -8px 0; 
-            border-radius: 10px;
-        }
-        QSlider::sub-page:horizontal {
-            background: #4CC2FF; /* 滑块走过的部分颜色 */
-        }
-        QSlider::add-page:horizontal {
-            background: #c4c4c4; /* 滑块未走过的部分颜色 */
-        })"});
         slider->setValue(0);
         slider->setRange(0, 0);
         sliderLayout->addWidget(slider);
@@ -61,6 +54,7 @@ ControlWidget::ControlWidget(QWidget *parent) : QWidget(parent) {
         btn = new QPushButton("test", sliderWidget);
         btn->setStyleSheet("background-color: white;");
         sliderLayout->addWidget(btn);
+        sliderWidget->setStyleSheet("background-color: rgb(237, 218, 218);");
     }
 
     decode_th = new Decode(&m_type);
@@ -165,6 +159,21 @@ void ControlWidget::onAudioClockChanged(int pts_seconds) {
     timeLabel->setText(pts_str);
 }
 
+void ControlWidget::onslectPlay() {
+    QString path = QFileDialog::getOpenFileName(
+        this, "选择视频文件",
+        QStandardPaths::writableLocation(
+            QStandardPaths::StandardLocation::MoviesLocation),
+        "Media Files(*.mp4 *.avi *.mkv *.mp3 *.wav);;All Files(*)");
+    if (!path.isEmpty()) {
+        // 仅显示文件名, 并且去掉后缀
+        titlebar->getTitle()->setText(
+            path.mid(path.lastIndexOf("/") + 1,
+                     path.lastIndexOf(".") - path.lastIndexOf("/") - 1));
+        showVideo(path);
+    }
+}
+
 void ControlWidget::startSeek() {
     isPlay = (m_type == CONTL_TYPE::PLAY);
     m_type = CONTL_TYPE::PAUSE;
@@ -210,11 +219,12 @@ void ControlWidget::onPlayOver() {
 
 void ControlWidget::mousePressEvent(QMouseEvent *event) {
     if (event->pos().x() >= 0 && event->pos().x() <= width() &&
-        event->pos().y() >= 0 &&
-        event->pos().y() <= height() - sliderWidget->height() - 10) {
+        event->pos().y() >= titlebar->height() &&
+        event->pos().y() <= height() - sliderWidget->height()) {
         if (event->button() == Qt::LeftButton) {
             changePlayState();
         }
     }
     QWidget::mousePressEvent(event);
 }
+
