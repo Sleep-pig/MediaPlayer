@@ -1,6 +1,9 @@
 #include "ControlWidget.hpp"
 #include <qapplication.h>
 #include <qboxlayout.h>
+#include <QMouseEvent>
+#include <qdebug.h>
+#include <qglobal.h>
 #include <qwidget.h>
 
 ControlWidget::ControlWidget(QWidget *parent) : QWidget(parent) {
@@ -88,6 +91,11 @@ ControlWidget::ControlWidget(QWidget *parent) : QWidget(parent) {
             &VideoThread::recvVideoPacket);
     connect(video_th, &VideoThread::getAudioClock, audio_th,
             &AudioThread::onGetAudioClock, Qt::DirectConnection); // 必须直连
+
+    // slider拖动
+    connect(slider, &Slider::sliderClicked, this, &ControlWidget::startSeek);
+    connect(slider, &Slider::sliderMoved, decode_th, &Decode::setCurFrame);
+    connect(slider, &Slider::sliderReleased, this, &ControlWidget::endSeek);
 }
 
 ControlWidget::~ControlWidget() {
@@ -111,7 +119,6 @@ ControlWidget::~ControlWidget() {
 
     qDebug() << "ControlWidget::~ControlWidget()";
 }
-
 
 void ControlWidget::showVideo(QString const &path) {
     if (m_type != CONTL_TYPE::NONE) {
@@ -158,6 +165,16 @@ void ControlWidget::onAudioClockChanged(int pts_seconds) {
     timeLabel->setText(pts_str);
 }
 
+void ControlWidget::startSeek() {
+    isPlay = (m_type == CONTL_TYPE::PLAY);
+    m_type = CONTL_TYPE::PAUSE;
+}
+
+void ControlWidget::endSeek() {
+    m_type = (isPlay ? CONTL_TYPE::PLAY : CONTL_TYPE::PAUSE);
+    emit ControlWidget::startPlay();
+}
+
 void ControlWidget::changePlayState() {
     switch (m_type) {
     case CONTL_TYPE::END:
@@ -191,3 +208,13 @@ void ControlWidget::onPlayOver() {
     timeLabel->setText(totalTimeLabel->text());
 }
 
+void ControlWidget::mousePressEvent(QMouseEvent *event) {
+    if (event->pos().x() >= 0 && event->pos().x() <= width() &&
+        event->pos().y() >= 0 &&
+        event->pos().y() <= height() - sliderWidget->height() - 10) {
+        if (event->button() == Qt::LeftButton) {
+            changePlayState();
+        }
+    }
+    QWidget::mousePressEvent(event);
+}

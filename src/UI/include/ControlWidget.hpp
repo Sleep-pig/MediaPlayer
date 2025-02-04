@@ -25,6 +25,12 @@ private slots:
     // 响应音频进度条
     void onAudioClockChanged(int pts_seconds);
 
+    // 响应拖动进度条, 当鼠标压下时暂停, 并保存播放状态
+    void startSeek();
+
+    // 响应拖动进度条, 当鼠标松开时恢复播放状态
+    void endSeek();
+
     // 强制关闭
     void terminatePlay();
 
@@ -48,6 +54,9 @@ private:
 
     bool isPlay = false;
 
+protected:
+    virtual void mousePressEvent(QMouseEvent *event) override;
+
 public:
     explicit ControlWidget(QWidget *parent = nullptr);
     ~ControlWidget();
@@ -60,7 +69,7 @@ public:
         return video_th;
     }
 
-    void showVideo(const QString &path);
+    void showVideo(QString const &path);
     void resumeUI();
     void changePlayState();
 };
