@@ -22,33 +22,6 @@ private:
     bool isDragging;
     QPoint dragPosition;
 
-protected:
-    void mousePressEvent(QMouseEvent *event) override {
-        if (event->button() == Qt::LeftButton &&
-            event->pos().y() <= controlWidget->titlebar->height()) {
-            isDragging = true;
-            dragPosition =
-                event->globalPos() - parentWidget()->frameGeometry().topLeft();
-            emit startDragging(dragPosition);
-        }
-        QWidget::mousePressEvent(event);
-    }
-
-    void mouseMoveEvent(QMouseEvent *event) override {
-        if (isDragging) {
-            emit dragging(event->globalPos());
-        }
-        QWidget::mouseMoveEvent(event);
-    }
-
-    void mouseReleaseEvent(QMouseEvent *event) override {
-        isDragging = false;
-        QWidget::mouseReleaseEvent(event);
-    }
-
-signals:
-    void startDragging(QPoint offset);
-    void dragging(QPoint position);
 
 public:
     MediaDialog(QWidget *parent = nullptr);
